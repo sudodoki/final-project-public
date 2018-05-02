@@ -1,2 +1,5 @@
 # data/books
 # data/bookNLP_output
+venv
+__pycache__
+.ipynb_checkpoints
