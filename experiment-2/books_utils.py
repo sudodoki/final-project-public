@@ -29,6 +29,7 @@ def book_name_to_annotated_name(book_name, book_char, present_chars, fallback_to
                     name = present_char
     return name or ("_" + longest_name(book_char) if fallback_to_longest else None)
 
+
 class CharacterList:
   def __init__(self, meta_json):
     self.id = meta_json['id']
@@ -83,7 +84,16 @@ class Book:
     return self._text
 
   @property
+  def paragraph_ids(self):
+    return self.tokens['paragraphId'].unique()
+
+  @property
+  def paragraphs(self):
+    return (self.tokens[(self.tokens['paragraphId'] == paragraph_id)] for paragraph_id in self.paragraph_ids)
+
+  @property
   def tokens(self):
     if (self._tokens is None):
-      self._tokens = pd.read_table(self.tokens_file, sep='\t', error_bad_lines=False, engine="python")
+      self._tokens = pd.read_csv(self.tokens_file, sep='\t', error_bad_lines=True, quoting=3)
+      # self._tokens = pd.read_table(self.tokens_file, sep='\t', error_bad_lines=False, engine="python")
     return self._tokens

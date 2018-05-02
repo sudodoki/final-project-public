@@ -50,7 +50,7 @@ def get_avg_sent(word, pos = None):
 
 def get_relation(book, paragraphIds):
     related_tokens = ' '.join(book.tokens[book.tokens['paragraphId'].isin(paragraphIds)]['lemma'].fillna('').ravel())
-    doc = nlp(related_tokens);
+    doc = nlp(related_tokens)
     tks = list(doc)
     sent = 0
     for token in tks:
