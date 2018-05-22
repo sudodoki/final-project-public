@@ -1,0 +1,118 @@
+################################### ReadMe #############################
+Frames Polarity Lexicons
+Used in Paper: Modeling Evolving Relationships Between Characters in Literary Novels
+Author: Snigdha Chaturvedi, University of Maryland, College Park 
+snigdhac@cs.umd.edu
+
+`Frames' and `Frame-elements' used in the following lexicon refer to those fired during frame-semantic parsing of the text using Semafor(Das, D.; Chen, D.; Martins, A. F. T.; Schneider, N.; and Smith, N. A. 2014. Frame-semantic parsing. Computational Linguistics, 40(1):9–56.)
+
+Format:
+### New Category
+Description about frame connotations:
+
+'frameName1': [frameElement11, frameElement12, ...]
+'frameName2': [frameElement21, frameElement22, ...]
+.
+.
+.
+################################### ReadMe #############################
+
+
+### New Category
+Frames with Negative Connotation:
+
+'fall_for': ['deception', 'victim']
+'thwarting': ['protagonist', 'preventing_cause']
+'cause_emotion': ['agent', 'experiencer']
+'defending': ['assailant', 'victim']
+'protecting': ['danger', 'asset']
+'fear': ['stimulus', 'experiencer']
+'immobilization': ['agent', 'patient']
+'rape': ['perpetrator', 'victim']
+'offenses': ['perpetrator', 'victim']
+'endangering': ['agent', 'valued_entity']
+'firing': ['employer', 'employee']
+'cause_harm': ['agent', 'victim']
+'quarreling': ['arguer1', 'arguer2', 'arguers']
+'attack': ['assailant', 'victim']
+'hit_target': ['agent', 'target']
+'intentional_deception': ['deceiver', 'victim']
+'piracy': ['perpetrator', 'victim']
+'inhibit_movement': ['agent', 'theme']
+'experience_bodily_harm': ['experiencer', 'body_part']
+'abusing': ['victim', 'abuser']
+'hostile_encounter': ['side_1', 'side_2', 'sides']
+'kidnapping': ['perpetrator', 'victim', 'co-participant']
+'taking_captive': ['agent', 'captive']
+'revenge': ['avenger', 'offender', 'injured_party']
+'killing': ['killer', 'victim']
+'manipulate_into_doing': ['manipulator', 'victim']
+'competition': ['participant_1', 'participant_2', 'participants']
+'prevent_from_having': ['agent', 'protagonist']
+'giving_in': ['compeller', 'capitulator']
+'avoiding': ['agent', 'undesirable_situation']
+'violence': ['aggressor', 'aggressors', 'victim']
+'besieging': ['assailant', 'victim']
+'destroying': ['destroyer', 'undergoer']
+'hindering': ['protagonist', 'action']
+'trap': ['deceiver', 'victim']
+'going_back_on_a_commitment': ['protagonist', 'affected_party']
+'want_suspect': ['suspect']
+
+### New Category
+Frames with Positive Connotation:
+
+'alliance': ['member_1', 'member_2', 'alliance']
+'supporting': ['supporter', 'supported']
+'come_together': ['configuration', 'individuals', 'party_1', 'party_2']
+'commitment': ['speaker', 'addressee']
+'reassuring': ['speaker', 'experiencer']
+'warning': ['speaker', 'addressee']
+'personal_relationship': ['partner_1', 'partner_2', 'partners']
+'defending': ['defender', 'victim']
+'choosing': ['cognizer', 'chosen']
+'protecting': ['protection', 'asset']
+'desiring': ['experiencer', 'focal_participant']
+'chatting': ['interlocutor_1', 'interlocutor_2']
+'visiting': ['agent', 'entity']
+'supply': ['supplier', 'recipient']
+'reveal_secret': ['speaker', 'addressee']
+'emotion_active': ['experiencer', 'topic']
+'social_event': ['attendee']
+'forgiveness': ['judge', 'evaluee']
+'collaboration': ['partner_1', 'partner_2', 'partners']
+'participation': ['participant_1', 'participant_2', 'participants']
+'reparation': ['wrongdoer', 'wrongdoer']
+'sharing': ['protagonist_1', 'protagonist_2', 'protagonists']
+'social_event_collective': ['attendees']
+'offering': ['offerer', 'potential_recipient']
+'social_event_individuals': ['party_1', 'party_2']
+'be_in_agreement_on_assessment': ['cognizer_1', 'cognizer_1', 'cognizers']
+'releasing': ['captor', 'theme']
+'make_agreement_on_action': ['party_1', 'party_2', 'parties']
+'suasion': ['speaker', 'addressee']
+'commonality': ['entity_1', 'entity_2', 'entities']
+'sign_agreement': ['signatory', 'co-participant']
+'rescuing': ['agent', 'asset', 'patient']
+'subjective_influence': ['agent', 'cognizer']
+'forming_relationships': ['partner_1', 'partner_2', 'partners']
+'hospitality': ['host', 'guest']
+'grooming': ['agent', 'patient']
+'social_connection': ['individual_1', 'individual_2', 'individuals']
+
+### New Category
+Frames with Ambiguous Connotation:
+
+'cause_to_experience': ['agent', 'experiencer']
+'cotheme': ['theme', 'cotheme']
+'cause_bodily_experience': ['agent', 'experiencer']
+'friendly_or_hostile': ['side_1', 'side_2', 'sides']
+'respond_to_proposal': ['interlocutor', 'speaker']
+'manipulation': ['agent', 'entity']
+'experiencer_focus': ['experiencer']
+
+### New Category
+Frames indicating relationships:
+
+'subordinates_and_superiors': ['superior', 'subordinate']
+'kinship': ['alter', 'ego', 'relatives']
